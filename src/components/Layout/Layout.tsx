@@ -1,10 +1,15 @@
 import { FC } from 'react'
-import { Select } from '@chakra-ui/react'
+import { Outlet } from 'react-router-dom'
+
+import { Navbar } from '@/components/Navbar/Navbar.tsx'
 
 const Layout: FC = () => {
 	return (
 		<>
-			<Select>Layout</Select>
+			<Navbar />
+			<main>
+				<Outlet />
+			</main>
 		</>
 	)
 }

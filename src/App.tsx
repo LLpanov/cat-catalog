@@ -1,13 +1,19 @@
 import { FC } from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Route, Routes } from 'react-router-dom'
+import { Layout } from '@/components/Layout/Layout.tsx'
+import { CatPage, HomePage, NotFoundPage } from '@/pages'
 
 const App: FC = () => {
 
 	return (
-		<>
-			<Box><Text color={'blue'}>London</Text></Box>
-			<p>{JSON.stringify(import.meta.env.VITE_API_KEY)}</p>
-		</>
+		<Routes>
+			<Route path={'/'} element={<Layout />}>
+				<Route index element={<HomePage />} />
+				<Route path={'cats'} element={<CatPage />} />
+
+				<Route path={'*'} element={<NotFoundPage />} />
+			</Route>
+		</Routes>
 	)
 }
 

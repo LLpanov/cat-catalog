@@ -3,7 +3,7 @@ import { FC } from 'react'
 const NotFound: FC = () => {
 	return (
 		<>
-			<span>404</span>
+			<div>errror page</div>
 		</>
 	)
 }
