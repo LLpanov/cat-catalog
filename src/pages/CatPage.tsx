@@ -1,8 +1,8 @@
 import { FC } from 'react'
-import { CatList } from '@/components/CatList/CatList.tsx'
+import { Breeds } from '@/components/Breeds/Breeds.tsx'
 
 const CatPage: FC = () => {
-	return <CatList />
+	return <Breeds />
 }
 
 export { CatPage }
