@@ -1,12 +1,14 @@
 import { FC } from 'react'
-import { Heading } from '@chakra-ui/react'
+import { Button, Heading } from '@chakra-ui/react'
 
 const Breeds: FC = () => {
 	return (
 		<>
-      <h1>breed</h1>
+      <h6>breed</h6>
 			<Heading fontFamily={'heading'}>Link</Heading>
 			<Heading fontFamily={'body'}>Link2</Heading>
+			<Heading fontFamily={'link'}>Match</Heading>
+			<Button fontFamily={'button'}>button</Button>
 		</>
 	)
 }
