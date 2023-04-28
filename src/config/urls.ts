@@ -4,7 +4,7 @@ const apiKey = import.meta.env.VITE_API_KEY
 const urls = {
 	breeds: '/breeds',
 	categories: '/categories',
-	images: '/images',
+	images: '/images/search',
 	favorites:'/favorites'
 }
 
