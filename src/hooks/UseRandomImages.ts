@@ -10,7 +10,7 @@ export const useRandomImages = () => {
 	const { data, isLoading, isError } = useQuery<IImage[], Error>({
 		queryFn: () => imageService.getRandomImage(),
 		queryKey: ['images'],
-		staleTime: 1000 * 10,
+		staleTime: 180*1000,
 		onError: (err: Error) => {
 			toast({
 				status: 'error',
