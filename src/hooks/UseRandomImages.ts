@@ -7,7 +7,7 @@ import { imageService } from '@/services/image.service.ts'
 
 export const useRandomImages = () => {
 	const toast = useToast()
-	const { data, isLoading, isError } = useQuery<IImage[], Error>({
+	const { data, isLoading, isError,isSuccess } = useQuery<IImage[], Error>({
 		queryFn: () => imageService.getRandomImage(),
 		queryKey: ['images'],
 		staleTime: 180*1000,
@@ -25,5 +25,5 @@ export const useRandomImages = () => {
 			}))
 	})
 
-	return { data, isLoading, isError }
+	return { data, isLoading, isError,isSuccess }
 }

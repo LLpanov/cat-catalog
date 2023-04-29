@@ -3,12 +3,11 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { Box, Image, Spinner } from '@chakra-ui/react'
-import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io'
 
 import { useRandomImages } from '@/hooks/UseRandomImages.ts'
 
 const Carousel: FC = () => {
-	const { data: images, isLoading, isError } = useRandomImages()
+	const { data: images, isLoading, isError, isSuccess } = useRandomImages()
 
 	const settings = {
 		dots: false,
@@ -16,10 +15,7 @@ const Carousel: FC = () => {
 		autoplay: true,
 		autoplaySpeed: 3000,
 		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: <IoIosArrowDropleftCircle />,
-		nextArrow: <IoIosArrowDroprightCircle />
-
+		slidesToScroll: 1
 	}
 
 	return (
@@ -34,7 +30,7 @@ const Carousel: FC = () => {
 				</Box>
 			) : (
 				<Slider {...settings}>
-					{images?.map((image) => (
+					{isSuccess && images?.map((image) => (
 						<Box key={image.id} width='100%' height='350px'>
 							<Image src={image.url} borderRadius='md' alt={image.id} objectFit='cover' width='100%' height='100%' />
 						</Box>
