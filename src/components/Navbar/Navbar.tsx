@@ -1,13 +1,17 @@
 import { FC } from 'react'
-import { Flex } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { Flex, Link } from '@chakra-ui/react'
+
 
 const Navbar: FC = () => {
 	return (
 
-		<Flex flexDirection={'row'} bg={'skyblue'} height={'100px'} columnGap={5} justifyContent={'flex-start'}>
-			<Link to='/'>Home</Link>
-			<Link to='/cats'>Cats</Link>
+		<Flex columnGap={5}>
+			<NavLink to='/'>Home</NavLink>
+			<NavLink to='/cats'>Cats</NavLink>
+			<Link href='https://thecatapi.com' style={{ textDecoration: 'none' }} _hover={{ color: 'blue' }} isExternal>
+				About Api
+			</Link>
 		</Flex>
 
 	)

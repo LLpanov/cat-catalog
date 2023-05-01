@@ -15,7 +15,8 @@ const Carousel: FC = () => {
 		autoplay: true,
 		autoplaySpeed: 3000,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+
 	}
 
 	return (
@@ -29,7 +30,7 @@ const Carousel: FC = () => {
 					/>
 				</Box>
 			) : (
-				<Slider {...settings}>
+				<Slider {...settings} >
 					{isSuccess && images?.map((image) => (
 						<Box key={image.id} width='100%' height='350px'>
 							<Image src={image.url} borderRadius='md' alt={image.id} objectFit='cover' width='100%' height='100%' />
