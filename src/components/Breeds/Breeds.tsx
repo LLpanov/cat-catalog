@@ -2,6 +2,8 @@ import { FC } from 'react'
 import { Button, Heading } from '@chakra-ui/react'
 
 const Breeds: FC = () => {
+	// const {data,isError ,isLoading} = useBreeds()
+	// console.log(data)
 	return (
 		<>
       <h6>breed</h6>

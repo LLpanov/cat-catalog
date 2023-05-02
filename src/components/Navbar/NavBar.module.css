@@ -1,0 +1,8 @@
+
+.linked :hover{
+    color:blue;
+}
+
+.linked a[class='active']{
+    color:black;
+}
