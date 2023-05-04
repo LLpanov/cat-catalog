@@ -7,7 +7,7 @@ import { Box, Image, Spinner } from '@chakra-ui/react'
 import { useRandomImages } from '@/hooks/UseRandomImages.ts'
 
 const Carousel: FC = () => {
-	const { data: images, isLoading, isError, isSuccess } = useRandomImages()
+	const { data: images, isLoading, isSuccess } = useRandomImages()
 
 	const settings = {
 		dots: false,

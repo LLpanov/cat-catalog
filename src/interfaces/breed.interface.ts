@@ -1,7 +1,10 @@
+import { IImage } from '@/interfaces/image.interface.ts'
+
 export interface IBreed {
 	weight: IWeight
 	id: string
 	name: string
+	image:IImage
 	cfa_url: string
 	vetstreet_url: string
 	vcahospitals_url: string
@@ -41,4 +44,9 @@ export interface IBreed {
 interface IWeight {
 	imperial: string
 	metric: string
+}
+
+export interface IGetBreedsParams {
+	limit?: number
+	page: number
 }
