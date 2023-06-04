@@ -9,6 +9,7 @@ import { BreedDetail } from '@/components/BreedDetail/BreedDetail.tsx'
 //git
 //git
 //1
+//
 const App: FC = () => {
 
 	return (
