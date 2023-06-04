@@ -7,6 +7,7 @@ import { FavouritesPage } from '@/pages/FavouritesPage.tsx'
 import { BreedDetail } from '@/components/BreedDetail/BreedDetail.tsx'
 
 //git
+//git
 const App: FC = () => {
 
 	return (
