@@ -6,11 +6,13 @@ import { CatPage, HomePage, NotFoundPage } from '@/pages'
 import { FavouritesPage } from '@/pages/FavouritesPage.tsx'
 import { BreedDetail } from '@/components/BreedDetail/BreedDetail.tsx'
 
+//git
 const App: FC = () => {
 
 	return (
 		<Routes>
 			<Route path={'/'} element={<Layout />}>
+
 				<Route index element={<HomePage />} />
 				<Route path={'cats'} element={<CatPage />} />
 				<Route path={':id'} element={<BreedDetail />} />
