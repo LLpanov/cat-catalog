@@ -1,9 +1,10 @@
 import { FC } from 'react'
 
+//ddd
 const BreedDetail: FC = () => {
 	return (
 		<>
-			<h1>KoteykaDeail</h1>
+			<h1>KoteykaDeaild</h1>
 		</>
 	)
 }
