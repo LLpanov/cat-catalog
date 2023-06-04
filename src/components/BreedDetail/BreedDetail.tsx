@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-//ddd
+//dddв
 const BreedDetail: FC = () => {
 	return (
 		<>
