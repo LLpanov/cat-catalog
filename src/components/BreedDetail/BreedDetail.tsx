@@ -1,12 +1,15 @@
 import { FC } from 'react'
+import { useLocation } from "react-router-dom";
 
-//dddв
 const BreedDetail: FC = () => {
-	return (
-		<>
-			<h1>KoteykaDeaild</h1>
-		</>
-	)
+    const { state } = useLocation();
+    const breed = state.breed
+    console.log(breed)
+    return (
+        <>
+            <h1>KoteykaDeaild</h1>
+        </>
+    )
 }
 
 export { BreedDetail }
