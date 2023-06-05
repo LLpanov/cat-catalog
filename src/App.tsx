@@ -6,10 +6,7 @@ import { CatPage, HomePage, NotFoundPage } from '@/pages'
 import { FavouritesPage } from '@/pages/FavouritesPage.tsx'
 import { BreedDetail } from '@/components/BreedDetail/BreedDetail.tsx'
 
-//git
-//git
-//1
-//
+
 const App: FC = () => {
 
 	return (
