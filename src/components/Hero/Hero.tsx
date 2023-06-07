@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Container } from '@chakra-ui/react'
+
 import { Carousel } from '@/components/Carousel/Carousel.tsx'
 
 

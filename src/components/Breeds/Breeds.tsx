@@ -10,7 +10,6 @@ import { CatLoader } from '@/components/CatLoader/CatLoader.tsx'
 const Breeds: FC = () => {
 	const [page, setPage] = useState(0)
 	const { data, isLoading } = useBreeds({ page })
-	console.log(data)
 
 	const nextPage = (e: React.MouseEvent<HTMLButtonElement>) => {
 		e.preventDefault()
